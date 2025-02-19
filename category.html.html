@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Webpack</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a href="index.html" class="d-lg-none">
+          <img src="images/Logo-không-nền-300x80.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Danh Mục</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Giới thiệu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sơ Đồ Tổ Chức</a></li>
+                  <li><a class="dropdown-item" href="#">Về chúng tôi</a></li>
+                  <li><a class="dropdown-item" href="#">Hoạt động Minh Bảo</a></li>
+                  <li><a class="dropdown-item" href="#">Tuyển dụng</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dịch vụ
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Thiết kế kiến trúc nhà</a></li>
+                  <li><a class="dropdown-item" href="#">Xây nhà trọn gói</a></li>
+                  <li><a class="dropdown-item" href="#">Xây nhà phần thô</a></li>
+                  <li><a class="dropdown-item" href="#">Sửa chữa nhà</a></li>
+                  <li><a class="dropdown-item" href="#">Hoàn thiện căn hộ</a></li>
+                  <li><a class="dropdown-item" href="#">Nâng tầng nhà phố</a></li>
+                  <li><a class="dropdown-item" href="#">Thi công sàn đúc giả</a></li>
+                  <li><a class="dropdown-item" href="#">Vật liệu hoàn thiện</a></li>
+                  <li><a class="dropdown-item" href="#">Thi công trần thạch cao</a></li>
+                  <li><a class="dropdown-item" href="#">Khuyến mại</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  1000+ mẫu nhà đẹp
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mẫu nhà cấp 4</a></li>
+                  <li><a class="dropdown-item" href="#">Mẫu nhà 2 tầng</a></li>
+                  <li><a class="dropdown-item" href="#">Mẫu nhà 3 tầng</a></li>
+                  <li><a class="dropdown-item" href="#">Mẫu nhà 4 tầng</a></li>
+                  <li><a class="dropdown-item" href="#">Mẫu nhà 5 tầng</a></li>
+                  <li><a class="dropdown-item" href="#">Mẫu biệt thự</a></li>
+                  <li><a class="dropdown-item" href="#">Mẫu nhà khác</a></li>
+                </ul>
+              </li>
+              <li class="nav-item nav-logo d-none d-lg-block">
+                <a class="nav-link" href="#">
+                  <img src="images/Logo-không-nền-300x80.png" alt="logo">
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dự án
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Thiết kế</a></li>
+                  <li><a class="dropdown-item" href="#">Thi công</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Kinh nghiệm
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Cẩm nang xây nhà</a></li>
+                  <li><a class="dropdown-item" href="#">Luật xây dựng</a></li>
+                  <li><a class="dropdown-item" href="#">Phong thủy</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Tiện ích
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Tính chi phí xây dựng</a></li>
+                  <li><a class="dropdown-item" href="#">Tính mật độ xây dựng</a></li>
+                  <li><a class="dropdown-item" href="#">Tính tuổi xây nhà</a></li>
+                  <li><a class="dropdown-item" href="#">Thước lỗ ban</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+              </li>
+            </ul>
+            <div class="search-wrapper">
+              <div class="search">
+                <input type="text" placeholder=" ">
+                <div>
+                  <svg>
+                    <use xlink:href="#path">
+                  </svg>
+                </div>
+              </div>
+
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 28" id="path">
+                  <path
+                    d="M32.9418651,-20.6880772 C37.9418651,-20.6880772 40.9418651,-16.6880772 40.9418651,-12.6880772 C40.9418651,-8.68807717 37.9418651,-4.68807717 32.9418651,-4.68807717 C27.9418651,-4.68807717 24.9418651,-8.68807717 24.9418651,-12.6880772 C24.9418651,-16.6880772 27.9418651,-20.6880772 32.9418651,-20.6880772 L32.9418651,-29.870624 C32.9418651,-30.3676803 33.3448089,-30.770624 33.8418651,-30.770624 C34.08056,-30.770624 34.3094785,-30.6758029 34.4782612,-30.5070201 L141.371843,76.386562"
+                    transform="translate(83.156854, 22.171573) rotate(-225.000000) translate(-83.156854, -22.171573)">
+                  </path>
+                </symbol>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="banner-section">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+<!-- <script src="../../third_party/swiper-11.2.4/package/swiper-bundle.min.js"></script> -->
+
+</body>
+</html>
