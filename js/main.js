@@ -20,6 +20,17 @@ function bannerSwiper () {
         disableOnInteraction: false,
       },
     });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
 }
 
 // Create an example popover
